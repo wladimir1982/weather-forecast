@@ -1,0 +1,121 @@
+@import '../../theme/variables.scss';
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.timelineDot {
+  &:global(.MuiTimelineDot-root) {
+    margin: 0;
+    background-color: transparent;
+    border-color: var(--GREY_6);
+    box-shadow: none;
+    svg {
+        color: var(--GREY_12);
+    }
+  }
+}
+
+.timelineContent {
+  background-color: var(--GREY_4);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.timelineBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select {
+  &:global(.MuiInputBase-root) {
+    background-color: var(--VIBRANT_BLUE);
+    border-radius: 50%;
+    height: 43px;
+    width: 43px;
+  }
+}
+
+.wrapInput {
+  margin: 0 0 16px;
+  font-size: var(--font-size-s);
+  &:global(.MuiInputBase-root) {
+    width: 100%;
+    padding: 0;
+    background-color: var(--WHITE);
+  }
+}
+
+.input{
+  &:global(.MuiInputBase-input.MuiInput-input) {
+    border: 1px solid var(--GREY_2);
+    border-radius: 4px;
+    padding: 8px 8px 9px;
+    &:focus {
+      border: 2px solid var(--GREEN);
+      padding: 7px 7px 8px;
+    }
+  }
+}
+
+.bottomActions {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapIconButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.submitBtn {
+  &:global(.MuiButtonBase-root.MuiButton-root) {
+    background-color: var(--GREEN);
+    color: var(--WHITE);
+    text-transform: initial;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: var(--GREEN);
+        opacity: 0.8;
+    }
+  }
+}
+
+.iconButton {
+  &:global(.MuiIconButton-root) {
+    background-color: var(--WHITE);
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: var(--VIBRANT_BLUE);
+    }
+  }
+}
+
+.title {
+  &:global(.MuiTypography-root) {
+    color: var(--VIBRANT_BLUE);
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+.explanatoryText {
+  &:global(.MuiTypography-root) {
+    color: var(--BLACK);
+  }
+}
+
+.note {
+  &:global(.MuiTypography-root) {
+    font-weight: var(--font-weight-light);
+    font-size: var(--font-size-s);
+  }
+}
+
+.emptyMsg {
+  &:global(.MuiTypography-root) {
+    margin: 50px auto;
+  }
+}
