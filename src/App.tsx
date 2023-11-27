@@ -1,6 +1,5 @@
 import React from 'react';
 import { CssBaseline, ThemeProvider } from '@mui/material';
-import ActivityFeed from './components/ActivityFeed/ActivityFeed';
 import theme from './theme/teme';
 
 function App() {
@@ -8,7 +7,7 @@ function App() {
     <>
       <CssBaseline />
       <ThemeProvider theme={theme}>
-        <ActivityFeed />
+        <div>Hello!!!</div>
       </ThemeProvider>
     </>
   );

@@ -1,7 +1,3 @@
-export interface IActivityFeed {
-  id: string;
-  createdAt: string;
-  type: string;
-  explanatoryText: string;
-  note: string;
+export interface IHello {
+  title: string
 }
