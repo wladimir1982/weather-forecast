@@ -1,0 +1,60 @@
+@import 'src/theme/variables';
+
+.title {
+  &:global(.MuiTypography-root) {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: var(--LIGHT_SKY_BLUE);
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //background-image: url('../../assets/images/weather.jpeg');
+  //background-image: url('../../assets/images/wp4184900.jpeg');
+  background-image: url('../../assets/images/sunrise-cloudy-weather-waves.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mainContent {
+  min-height: 100vh;
+  width: 990px;
+  padding: 30px 15px;
+}
+
+.historySearchWrap {
+  min-height: 40px;
+  max-height: 80px;
+  display: flex;
+  margin-top: 5px;
+  overflow-x: auto;
+}
+
+.historySearch {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  &:global(.MuiChip-root) {
+    background-color: var(--LIGHT_SKY_BLUE);
+  }
+}
+
+.errorMessage {
+  color: var(--ERROR);
+  margin-top: 50px;
+  text-align: center;
+  font-size: var(--font-size-xl)
+}

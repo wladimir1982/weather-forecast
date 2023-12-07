@@ -9,9 +9,10 @@
   /* Secondary */
   --BLUE: #3b7fa5;
   --BLUE_CERULEAN: #12abdb;
+  --LIGHT_SKY_BLUE: #87CEFA;
   --BLUE_GREEN: #0f6a73;
   --GREEN: #52c8b4;
-  --RED: #e74c3c;
+  --RED: #DC143C;
   --RED_VIOLET: #a12980;
   --SUCCESS: #07bc0c;
   --INFO: #3498db;
@@ -47,6 +48,8 @@
   --font-size-xl: 24px;
   --font-size-xxl: 32px;
   --font-size-xxxl: 40px;
+  --font-size-xxxxl: 60px;
+  --font-size-extra: 70px;
   --font-size-h1: 40px;
   --font-size-h2: 34px;
   --font-size-h3: 24px;
@@ -67,6 +70,7 @@
   --font-weight-light: 200;
   --font-weight-normal: 400;
   --font-weight-normal-500: 500;
+  --font-weight-normal-600: 600;
   --font-weight-bold: 700;
   /* Typography - END */
 }
