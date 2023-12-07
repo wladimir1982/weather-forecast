@@ -1,5 +1,18 @@
 @import 'src/theme/variables';
 
+.title {
+  &:global(.MuiTypography-root) {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: var(--LIGHT_SKY_BLUE);
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -15,21 +28,22 @@
 
 .mainContent {
   min-height: 100vh;
-  width: 960px;
-  padding: 30px 0;
+  width: 990px;
+  padding: 30px 15px;
 }
 
 .historySearchWrap {
-  height: 40px;
+  min-height: 40px;
+  max-height: 80px;
   display: flex;
-  align-items: center;
   margin-top: 5px;
+  overflow-x: auto;
 }
 
 .historySearch {
   display: flex;
   gap: 10px;
-  overflow-y: auto;
+  flex-wrap: wrap;
 }
 
 .chip {

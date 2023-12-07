@@ -1,7 +1,7 @@
 @import '../../theme/variables.scss';
 
 .weather {
-  width: 350px;
+  max-width: 350px;
   height: 265px;
   border-radius: 6px;
   box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
@@ -63,6 +63,12 @@
     width: auto;
     letter-spacing: -5px;
     margin: 10px 0;
+  }
+
+  @media (max-width: 480px) {
+    &:global(.MuiTypography-root) {
+      font-size: var(--font-size-xxxxl);
+    }
   }
 }
 

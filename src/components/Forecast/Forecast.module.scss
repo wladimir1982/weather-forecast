@@ -3,6 +3,7 @@
 .weeklyWeatherForecastContainer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .dailyItem {
@@ -13,6 +14,7 @@
   color: var(--WHITE);
   background-color: var(--BLACK_GREY);
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .dayOfTheWeek,

@@ -1,5 +1,5 @@
 import React, { useCallback, useState, useMemo } from 'react';
-import { Box, Chip } from '@mui/material';
+import { Box, Chip, Typography } from '@mui/material';
 import { WEATHER_API_URL, WEATHER_API_KEY } from '../../api';
 import CurrentWeather from '../../components/CurrentWeather';
 import Forecast from '../../components/Forecast';
@@ -85,6 +85,9 @@ const WeatherForecast: React.FC = () => {
   return (
     <Box className={styles.container} data-testid="weather-forecast">
       <Box className={styles.mainContent}>
+        <Typography className={styles.title}>
+          Why did the weather forecast go to therapy? Because it had a "cloudy" outlook on life!
+        </Typography>
         <Search selectedCity={selectedCity} onSearchChange={handleOnSearchChange} />
         <Box className={styles.historySearchWrap} data-testid="history-search-wrap">
           {cities.length > 0 ? (<Box className={styles.historySearch}>{citiesChips}</Box>) : null}
